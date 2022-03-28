@@ -9,6 +9,8 @@ import {
   TouchableOpacity,
 } from 'react-native';
 
+import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
+
 const App = () => {
   return (
     <SafeAreaView
@@ -19,7 +21,20 @@ const App = () => {
           GAMEON
         </Text>
       </View>
-      <TouchableOpacity></TouchableOpacity>
+      <TouchableOpacity
+        style={{
+          backgroundColor: '#AD40AF',
+          flexDirection: 'row',
+          justifyContent: 'space-between',
+          padding: 20,
+          width: '90%',
+          borderRadius: 5,
+        }}>
+        <Text style={{fontSize: 18, fontWeight: 'bold', color: '#fff'}}>
+          Let's begin
+        </Text>
+        <MaterialIcons name="arrow-forward-ios" size={22} color="#fff" />
+      </TouchableOpacity>
     </SafeAreaView>
   );
 };
