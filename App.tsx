@@ -30,7 +30,13 @@ const App = () => {
           width: '90%',
           borderRadius: 5,
         }}>
-        <Text style={{fontSize: 18, fontWeight: 'bold', color: '#fff'}}>
+        <Text
+          style={{
+            fontSize: 18,
+            fontWeight: 'bold',
+            color: '#fff',
+            fontFamily: 'Roboto-MediumItalic',
+          }}>
           Let's begin
         </Text>
         <MaterialIcons name="arrow-forward-ios" size={22} color="#fff" />
