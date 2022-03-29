@@ -11,16 +11,34 @@ import {
 
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 
+import Gaming from './src/assets/gaming.svg';
+
 const App = () => {
   return (
     <SafeAreaView
       style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
       <StatusBar barStyle={'light-content'} />
       <View>
-        <Text style={{fontSize: 30, fontWeight: 'bold', color: '#20315F'}}>
+        <Text
+          style={{
+            fontFamily: 'Inter-Bold',
+            fontSize: 30,
+            fontWeight: 'bold',
+            color: '#20315F',
+            marginTop: 30,
+          }}>
           GAMEON
         </Text>
       </View>
+
+      <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
+        <Gaming
+          width={300}
+          height={300}
+          style={{transform: [{rotate: '-15deg'}]}}
+        />
+      </View>
+
       <TouchableOpacity
         style={{
           backgroundColor: '#AD40AF',
@@ -29,13 +47,14 @@ const App = () => {
           padding: 20,
           width: '90%',
           borderRadius: 5,
+          marginBottom: 50,
         }}>
         <Text
           style={{
             fontSize: 18,
-            fontWeight: 'bold',
             color: '#fff',
             fontFamily: 'Roboto-MediumItalic',
+            // fontWeight: 'bold',
           }}>
           Let's begin
         </Text>
