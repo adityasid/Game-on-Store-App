@@ -16,6 +16,8 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 
 import Gaming from './src/assets/gaming.svg';
 
+import HomeScreen from './src/screens/HomeScreen';
+
 const Stack = createNativeStackNavigator();
 
 const App = () => {
@@ -27,7 +29,11 @@ const App = () => {
           component={Main}
           options={{headerShown: false}}
         />
-        <Stack.Screen name="Home" component={Home} />
+        <Stack.Screen
+          name="Home"
+          component={HomeScreen}
+          options={{headerShown: false}}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );
