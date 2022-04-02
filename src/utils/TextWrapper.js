@@ -1,15 +1,15 @@
 import React from 'react';
 import { Text } from 'react-native';
 
-// DancingScript-Regular
 // Roboto-Regular
 // Roboto-Bold
-export const customDefaultFontFamily = 'Roboto-Regular';
+// DancingScript-Regular
+export const customDefaultFontFamily = 'Roboto-Medium';
 export const customFontFamilyBold = 'Roboto-Bold';
-export const customFontFamily700 = 'HelveticaNowDisplay-Bold';
+export const customFontFamily700 = 'DancingScript-Regular';
 
 
-function TextFont(props) {
+function TextWrapper(props) {
 
     const { style, children, customFontFamily = customDefaultFontFamily, ...propss } = props;
 
@@ -28,4 +28,4 @@ function TextFont(props) {
     )
 }
 
-export default TextFont
+export default TextWrapper
