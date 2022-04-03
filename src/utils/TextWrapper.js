@@ -5,8 +5,9 @@ import { Text } from 'react-native';
 // Roboto-Bold
 // DancingScript-Regular
 export const customDefaultFontFamily = 'Roboto-Medium';
-export const customFontFamilyBold = 'Roboto-Bold';
+export const customFontFamilyBold = 'Inter-Bold';
 export const customFontFamily700 = 'DancingScript-Regular';
+export const customFontFamilyMediumItalic = 'Roboto-MediumItalic';
 
 
 function TextWrapper(props) {

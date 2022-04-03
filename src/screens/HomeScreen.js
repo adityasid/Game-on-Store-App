@@ -39,7 +39,7 @@ function HomeScreen({ navigation }) {
                     <TextWrapper style={{ fontSize: 18 }}>
                         Namaste Aditya
                     </TextWrapper>
-                    <TouchableOpacity onPress={() => navigation.goBack()}>
+                    <TouchableOpacity onPress={() => navigation.openDrawer()}>
                         <ImageBackground
                             source={require('../assets/images/user-profile.jpg')}
                             style={{ width: 35, height: 35 }}
@@ -60,7 +60,6 @@ function HomeScreen({ navigation }) {
                     }}
                 >
                     <Feather name="search" size={20} color="#C6C6C6" style={{ marginRight: 5 }} />
-                    {/* <Text>Search</Text> */}
                     <TextInput placeholder="Search"
                         style={{ padding: 0, margin: 0, }}
                     />

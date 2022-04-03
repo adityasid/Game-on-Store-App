@@ -2,7 +2,7 @@ import { SafeAreaView, StatusBar, View, Text, TouchableOpacity } from 'react-nat
 import React from 'react'
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import Gaming from '../assets/gaming.svg';
-import TextWrapper from '../utils/TextWrapper';
+import TextWrapper, { customFontFamilyBold, customFontFamilyMediumItalic } from '../utils/TextWrapper';
 
 const OnboardingScreen = ({ navigation }) => {
     return (
@@ -12,7 +12,7 @@ const OnboardingScreen = ({ navigation }) => {
             <View>
                 <TextWrapper
                     style={{
-                        fontFamily: 'Inter-Bold',
+                        fontFamily: customFontFamilyBold,
                         fontSize: 30,
                         fontWeight: 'bold',
                         color: '#20315F',
@@ -45,7 +45,7 @@ const OnboardingScreen = ({ navigation }) => {
                     style={{
                         fontSize: 18,
                         color: '#fff',
-                        fontFamily: 'Roboto-MediumItalic',
+                        fontFamily: customFontFamilyMediumItalic,
                         // fontWeight: 'bold',
                     }}>
                     Let's begin
