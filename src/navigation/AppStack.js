@@ -1,22 +1,27 @@
 import React from 'react'
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { createDrawerNavigator } from '@react-navigation/drawer';
 import HomeScreen from '../screens/HomeScreen'
+import { LogBox } from 'react-native';
 
-const Stack = createNativeStackNavigator();
+LogBox.ignoreLogs([
+    "[react-native-gesture-handler] Seems like you\'re using an old API with gesture components, check out new Gestures system!",
+]);
+
+const Drawer = createDrawerNavigator();
 
 function AppStack() {
     return (
-        <Stack.Navigator
+        <Drawer.Navigator
             initialRouteName="Home"
             screenOptions={{ headerShown: false }}
         >
-            <Stack.Screen
+            <Drawer.Screen
                 name="Home"
                 component={HomeScreen}
             // options={{ headerShown: false }}
             />
 
-        </Stack.Navigator>
+        </Drawer.Navigator>
     )
 }
 
