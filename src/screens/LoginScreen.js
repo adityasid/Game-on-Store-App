@@ -1,10 +1,11 @@
 import { View, Text } from 'react-native'
 import React from 'react'
+import TextWrapper from '../utils/TextWrapper'
 
 const LoginScreen = () => {
     return (
         <View>
-            <Text>LoginScreen</Text>
+            <TextWrapper>Login Screen</TextWrapper>
         </View>
     )
 }

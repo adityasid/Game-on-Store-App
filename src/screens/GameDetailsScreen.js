@@ -2,12 +2,13 @@ import { View, Text } from 'react-native'
 import React from 'react'
 import TextWrapper from '../utils/TextWrapper'
 
-const ProfileScreen = () => {
+const GameDetailsScreen = ({ navigation, route }) => {
     return (
         <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-            <TextWrapper>Profile Screen</TextWrapper>
+            <TextWrapper>Game Details Screen</TextWrapper>
+            <TextWrapper>{route.params?.title}</TextWrapper>
         </View>
     )
 }
 
-export default ProfileScreen
+export default GameDetailsScreen

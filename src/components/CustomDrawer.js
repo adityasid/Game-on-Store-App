@@ -44,7 +44,7 @@ const CustomDrawer = props => {
                                 fontFamily: customDefaultFontFamily,
                                 marginRight: 5,
                             }}>
-                            786 Coins
+                            108 Coins
                         </TextWrapper>
                         <FontAwesome5 name="coins" size={14} color="#fff" />
                     </View>

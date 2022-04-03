@@ -1,12 +1,14 @@
 import React from 'react'
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import { createDrawerNavigator } from '@react-navigation/drawer';
-import HomeScreen from '../screens/HomeScreen'
+
 import ProfileScreen from '../screens/ProfileScreen'
 import MessagesScreen from '../screens/MessagesScreen'
 import MomentsScreen from '../screens/MomentsScreen'
 import SettingsScreen from '../screens/SettingsScreen'
 import CustomDrawer from '../components/CustomDrawer';
+
+import TabNavigator from '../navigation/TabNavigator'
 
 import { customDefaultFontFamily } from '../utils/TextWrapper'
 
@@ -17,7 +19,7 @@ LogBox.ignoreLogs([
 
 const Drawer = createDrawerNavigator();
 
-const AuthStack = () => {
+const AppStack = () => {
     return (
         <Drawer.Navigator
             drawerContent={props => <CustomDrawer {...props} />}
@@ -34,7 +36,7 @@ const AuthStack = () => {
             }}>
             <Drawer.Screen
                 name="Home"
-                component={HomeScreen}
+                component={TabNavigator}
                 options={{
                     // headerShown: false,
                     drawerIcon: ({ color }) => (
@@ -82,4 +84,4 @@ const AuthStack = () => {
     );
 };
 
-export default AuthStack;
+export default AppStack;
