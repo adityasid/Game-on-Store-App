@@ -61,7 +61,7 @@ function HomeScreen({ navigation }) {
                 >
                     <Feather name="search" size={20} color="#C6C6C6" style={{ marginRight: 5 }} />
                     <TextInput placeholder="Search"
-                        style={{ padding: 0, margin: 0, }}
+                        style={{ flex: 1, padding: 0, margin: 0 }}
                     />
                 </View>
 

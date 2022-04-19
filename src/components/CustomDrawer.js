@@ -63,7 +63,7 @@ const CustomDrawer = props => {
                                 fontFamily: customDefaultFontFamily,
                                 marginLeft: 5,
                             }}>
-                            Tell a Friend
+                            Share
                         </TextWrapper>
                     </View>
                 </TouchableOpacity>
